@@ -15,7 +15,7 @@ public class Vehicle {
 
     public void boardPassengers(int count) {
         if (currentPassengers + count > capacity) {
-            System.out.println("Kapasitas penuh! Tidak dapat menaikkan " + count + " penumpang.");
+            System.out.println("Kapasitas penuh! Tidak dapat menaikkan " + count + " penumpang");
         } else {
             currentPassengers += count;
             System.out.println(count + " penumpang naik ke dalam " + name);
@@ -24,7 +24,7 @@ public class Vehicle {
 
     public void dropPassengers(int count) {
         if (currentPassengers - count < 0) {
-            System.out.println("Tidak ada cukup penumpang untuk turun.");
+            System.out.println("Tidak ada cukup penumpang untuk turun");
         } else {
             currentPassengers -= count;
             System.out.println(count + " penumpang turun dari " + name);
@@ -36,11 +36,11 @@ public class Vehicle {
     }
 
     public void stopJourney() {
-        System.out.println(name + " mencapai tujuan akhir dan berhenti.");
+        System.out.println(name + " mencapai tujuan akhir dan berhenti");
     }
 
     public void calculateFare() {
-        System.out.println("Tarif tidak tersedia untuk kendaraan ini.");
+        System.out.println("Tarif tidak tersedia untuk kendaraan ini");
     }
 
     public int getCurrentPassengers() {

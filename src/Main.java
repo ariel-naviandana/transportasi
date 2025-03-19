@@ -5,9 +5,10 @@ public class Main {
         Bus bus = new Bus("Bus TransJakarta", "Rute A");
         bus.startJourney();
         bus.boardPassengers(30);
+        bus.boardPassengers(20);
         bus.calculateFare(5);
-        bus.dropPassengers(10);
         bus.stopJourney();
+        bus.dropPassengers(50);
 
         System.out.println("\n----------------------------------\n");
 
@@ -16,13 +17,15 @@ public class Main {
         train.boardPassengers(150);
         train.calculateFare();
         train.stopJourney();
+        train.dropPassengers(150);
 
         System.out.println("\n----------------------------------\n");
 
-        Taxi taxi = new Taxi("Taksi BlueBird");
+        Taxi taxi = new Taxi("Taksi BlueBird", "Rute C");
+        taxi.startJourney();
         taxi.boardPassengers(3);
         taxi.calculateFare(10);
-        taxi.dropPassengers(3);
         taxi.stopJourney();
+        taxi.dropPassengers(3);
     }
 }
