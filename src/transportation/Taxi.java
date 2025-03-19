@@ -2,8 +2,9 @@ package transportation;
 
 public class Taxi extends Vehicle {
     private static final int FARE_PER_KM = 5000;
+    private static final int capacity = 4;
 
-    public Taxi(String name, int capacity) {
+    public Taxi(String name) {
         super(name, capacity, "Rute fleksibel");
     }
 
