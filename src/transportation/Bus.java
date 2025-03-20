@@ -2,10 +2,8 @@ package transportation;
 
 public class Bus extends Vehicle {
     private static final int FARE_PER_STOP = 2000;
-    private static final int capacity = 50;
-    private static final String route = "Terminal A - Terminal B";
 
-    public Bus(String name) {
+    public Bus(String name, int capacity, String route) {
         super(name, capacity, route);
     }
 

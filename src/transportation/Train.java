@@ -2,10 +2,8 @@ package transportation;
 
 public class Train extends Vehicle {
     private static final int FIXED_FARE = 10000;
-    private static final int capacity = 200;
-    private static final String route = "Stasiun Kota - Stasiun Pusat";
 
-    public Train(String name) {
+    public Train(String name, int capacity, String route) {
         super(name, capacity, route);
     }
 
