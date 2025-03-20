@@ -3,8 +3,9 @@ package transportation;
 public class Taxi extends Vehicle {
     private static final int FARE_PER_KM = 5000;
     private static final int capacity = 4;
+    private static final String route = "Bandara - Hotel";
 
-    public Taxi(String name, String route) {
+    public Taxi(String name) {
         super(name, capacity, route);
     }
 

@@ -2,7 +2,7 @@ import transportation.*;
 
 public class Main {
     public static void main(String[] args) {
-        Bus bus = new Bus("Bus TransJakarta", "Rute A");
+        Bus bus = new Bus("Bus TransJakarta");
         bus.startJourney();
         bus.boardPassengers(30);
         bus.boardPassengers(20);
@@ -12,7 +12,7 @@ public class Main {
 
         System.out.println("\n----------------------------------\n");
 
-        Train train = new Train("Kereta Commuter Line", "Rute B");
+        Train train = new Train("Kereta Commuter Line");
         train.startJourney();
         train.boardPassengers(150);
         train.calculateFare();
@@ -21,7 +21,7 @@ public class Main {
 
         System.out.println("\n----------------------------------\n");
 
-        Taxi taxi = new Taxi("Taksi BlueBird", "Rute C");
+        Taxi taxi = new Taxi("Taksi BlueBird");
         taxi.startJourney();
         taxi.boardPassengers(3);
         taxi.calculateFare(10);
